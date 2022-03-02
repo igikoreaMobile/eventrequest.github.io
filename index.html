@@ -13,10 +13,10 @@
           if(data.userSelectedType=="R"){
             // userSelectedType : 검색 결과에서 사용자가 선택한 주소의 타입
             // return type : R - roadAddress, J : jibunAddress 
-            window.EventRequest.processDATA(data.zonecode+"/"+data.roadAddress+"/"+data.buildingName);
+            window.EventRequest.setAddress(data.zonecode+"/"+data.roadAddress+"/"+data.buildingName);
             }
           else{
-            window.EventRequest.processDATA(data.zonecodez+"/"+data.jibunAddress+"/"+data.buildingName);
+            window.EventRequest.setAddress(data.zonecodez+"/"+data.jibunAddress+"/"+data.buildingName);
               } 
             }
           }).open();

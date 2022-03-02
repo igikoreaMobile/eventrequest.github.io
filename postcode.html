@@ -4,21 +4,21 @@
     //본 예제에서는 도로명 주소 표기 방식에 대한 법령에 따라, 내려오는 데이터를 조합하여 올바른 주소를 구성하는 방법을 설명합니다.
         new daum.Postcode({
             oncomplete: function(data) {
-            if(data.userSelectedType=="R"){
+//             if(data.userSelectedType=="R"){
 
-                // TestApp 은 안드로이드에서 등록한 이름
-                window.EventRequest.processDATA(data.zonecode, data.roadAddress, data.buildingName);
-            }
-            else{
-                window.EventRequest.processDATA(data.zonecode, data.jibunAddress, data.buildingName);
-            }       
-            }
-//             onclose: function(state) {
-//                 if(state === 'COMPLETE_CLOSE'){
-//                     window.close();
-//                     close();
-//                 }
+//                 // TestApp 은 안드로이드에서 등록한 이름
+//                 window.EventRequest.processDATA(data.zonecode, data.roadAddress, data.buildingName);
 //             }
+//             else{
+//                 window.EventRequest.processDATA(data.zonecode, data.jibunAddress, data.buildingName);
+//             }       
+//             }
+// //             onclose: function(state) {
+// //                 if(state === 'COMPLETE_CLOSE'){
+// //                     window.close();
+// //                     close();
+// //                 }
+// //             }
             
         }).open({
     autoClose: true

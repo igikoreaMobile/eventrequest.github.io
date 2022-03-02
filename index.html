@@ -15,11 +15,13 @@
             // return type : R - roadAddress, J : jibunAddress 
             // TestApp 은 안드로이드에서 등록한 이름
             window.Android.processDATA(data.zonecode+"/"+data.roadAddress+"/"+data.buildingName);
-            
+            pop = window.open("//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js")
+            pop.close();
             }
           else{
             window.Android.processDATA(data.zonecodez+"/"+data.jibunAddress+"/"+data.buildingName); 
-     
+            pop = window.open("//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js")
+            pop.close();
             } 
             }
           }).open();

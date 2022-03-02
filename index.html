@@ -13,18 +13,11 @@
           if(data.userSelectedType=="R"){
             // userSelectedType : 검색 결과에서 사용자가 선택한 주소의 타입
             // return type : R - roadAddress, J : jibunAddress 
-            // TestApp 은 안드로이드에서 등록한 이름
-            window.Android.processDATA(data.zonecode+"/"+data.roadAddress+"/"+data.buildingName);
-            window.close();
-            opener.close();
-            close();
+            window.EventRequest.processDATA(data.zonecode+"/"+data.roadAddress+"/"+data.buildingName);
             }
           else{
-            window.Android.processDATA(data.zonecodez+"/"+data.jibunAddress+"/"+data.buildingName); 
-            window.close();
-            opener.close();
-            close();
-            } 
+            window.EventRequest.processDATA(data.zonecodez+"/"+data.jibunAddress+"/"+data.buildingName);
+              } 
             }
           }).open();
        </script> 
